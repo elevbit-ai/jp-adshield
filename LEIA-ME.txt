@@ -1,0 +1,68 @@
+=========================================================
+ JP AdShield v1.1.0
+ Bloqueador de anuncios + reprodutor em 2o plano (Android)
+ Criado por Joaquim Pedro de Morais Filho
+ j360074@hotmail.com
+=========================================================
+
+NOVO NA v1.1.0 - REPRODUTOR EM 2o PLANO (tipo Premium)
+  Botao "Reprodutor em 2o plano (YouTube/videos)" abre um player
+  que CONTINUA tocando com a tela apagada ou o app minimizado,
+  e flutua em janela (Picture-in-Picture) - parecido com o
+  YouTube Premium (reproducao em segundo plano).
+  - Digite uma URL ou busque no YouTube na barra de cima.
+  - Botao [⧉] = Picture-in-Picture (janela flutuante).
+  - Botao [PC] = modo computador (player completo).
+  - Ao apertar Home, entra em PiP sozinho.
+  - Na notificacao "JP Player" ha Pausar/Retomar e Parar.
+  Observacao honesta: isto NAO remove os anuncios do YouTube
+  (so permite tocar em 2o plano). A eficacia do "tela apagada"
+  pode variar por aparelho/versao do Android; o Picture-in-Picture
+  e o modo mais garantido.
+
+
+O QUE E
+  App que cria uma VPN LOCAL no proprio aparelho (sem root) e
+  filtra o DNS. Quando um app ou site pede um dominio de anuncio
+  ou rastreador, o pedido e bloqueado - em TODOS os apps e
+  navegadores do celular. Nenhum dado seu sai do aparelho:
+  o DNS vai direto para o Cloudflare (1.1.1.1). APK de 25 KB.
+
+COMO INSTALAR (APK fora da Play Store)
+  1. Copie JP-AdShield-v1.0.0.apk para o Android.
+  2. Toque no arquivo e confirme "Instalar mesmo assim".
+  3. Abra o app, toque em "Ativar protecao" e CONFIRME o pedido
+     de VPN do Android (aparece a chavinha de VPN na barra).
+
+COMO USAR
+  - "Ativar/Desativar protecao": liga/desliga o bloqueio.
+  - Estatisticas: mostra quantos pedidos foram bloqueados.
+  - "Atualizar listas": baixa a lista completa (StevenBlack),
+    com dezenas de milhares de dominios de anuncio/rastreador.
+
+SOBRE O YOUTUBE (importante e honesto)
+  Os anuncios DENTRO dos videos do YouTube NAO podem ser
+  bloqueados por DNS - o YouTube entrega o anuncio pelo mesmo
+  servidor (googlevideo.com) que entrega o video; bloquear
+  quebraria o video. Qualquer app que promete isso por DNS
+  esta enganando.
+  Formas que REALMENTE funcionam para o YouTube:
+   - Assistir pelo NAVEGADOR com bloqueador: Firefox + uBlock
+     Origin, ou o navegador Brave;
+   - SponsorBlock: pula trechos patrocinados (nao os anuncios
+     do Google);
+   - YouTube Premium: remove os anuncios oficialmente.
+  O JP AdShield bloqueia anuncios e rastreadores em TODO o
+  resto do sistema.
+
+LIMITACOES
+  - Apps que usam DNS proprio (DoH/DoT) ou "Private DNS" do
+    Android podem escapar do filtro. Para melhor resultado,
+    desative o "DNS privado" em Config > Rede > DNS privado.
+  - Filtra DNS IPv4 (cobre a grande maioria dos casos).
+
+PRIVACIDADE
+  O app nao coleta nada. So o trafego de DNS passa pela VPN
+  local (nao inspeciona o conteudo que voce acessa).
+
+(C) 2026 Joaquim Pedro de Morais Filho

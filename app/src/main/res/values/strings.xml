@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JP AdShield</string>
+    <string name="subtitulo">Bloqueador de anúncios e rastreadores para todo o Android — sem root</string>
+
+    <string name="status_on">● Proteção ATIVA</string>
+    <string name="status_off">○ Proteção desativada</string>
+    <string name="bt_ativar">▶  Ativar proteção</string>
+    <string name="bt_desativar">■  Desativar proteção</string>
+
+    <string name="stats_fmt">%1$d bloqueados  ·  %2$d liberados</string>
+    <string name="lista_fmt">Lista de bloqueio: %1$d domínios</string>
+    <string name="bt_update">Atualizar listas (baixar mais domínios)</string>
+    <string name="bt_youtube">Anúncios no YouTube — como fazer</string>
+    <string name="bt_player">▶  Reprodutor em 2º plano (YouTube/vídeos)</string>
+
+    <string name="como_usar">Como funciona:\nO JP AdShield cria uma VPN local no próprio aparelho e filtra o DNS. Quando um app ou site pede um domínio de anúncio/rastreador, o pedido é bloqueado — em todos os apps e navegadores, sem root. Nenhum dado seu sai do aparelho: o DNS vai direto para o Cloudflare (1.1.1.1).\n\nAo ativar, o Android vai pedir para confiar na conexão VPN — isso é normal e necessário.</string>
+
+    <string name="creditos">Criado por Joaquim Pedro de Morais Filho\nj360074@hotmail.com  ·  v1.0.0</string>
+
+    <string name="msg_permissao_vpn">Permissão de VPN necessária para a proteção funcionar.</string>
+    <string name="msg_ativado">Proteção ativada! Bloqueando anúncios no aparelho.</string>
+    <string name="msg_desativado">Proteção desativada.</string>
+    <string name="msg_baixando">Baixando lista atualizada…</string>
+    <string name="msg_atualizado">Lista atualizada: %1$d domínios bloqueados.</string>
+    <string name="msg_erro_download">Não foi possível baixar a lista (verifique a internet).</string>
+
+    <string name="yt_titulo">Anúncios no YouTube</string>
+    <string name="yt_texto">Seja honesto consigo: os anúncios DENTRO dos vídeos do YouTube NÃO podem ser bloqueados por DNS. O YouTube entrega o anúncio pelo mesmo servidor (googlevideo.com) que entrega o vídeo — bloquear o anúncio quebraria o vídeo. Qualquer app que promete isso por DNS está enganando.\n\nFormas que REALMENTE funcionam para o YouTube:\n\n• Assistir pelo NAVEGADOR com bloqueador: instale o Firefox e a extensão uBlock Origin, ou use o navegador Brave. Aí os anúncios do YouTube web são bloqueados.\n\n• SponsorBlock: pula trechos patrocinados marcados pela comunidade (não os anúncios do Google).\n\n• YouTube Premium: remove os anúncios oficialmente.\n\nO JP AdShield continua bloqueando anúncios e rastreadores em TODO o resto do sistema.</string>
+    <string name="yt_navegador">Abrir YouTube no navegador</string>
+    <string name="fechar">Fechar</string>
+</resources>

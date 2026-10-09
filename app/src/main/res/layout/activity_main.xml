@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- JP AdShield - Joaquim Pedro de Morais Filho -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#0B1020">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#4DFF88"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/subtitulo"
+            android:textColor="#9AA6C0"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:text="@string/status_off"
+            android:textColor="#9AA6C0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="0 bloqueados  ·  0 liberados"
+            android:textColor="#E6ECFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btToggle"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#1FBF66"
+            android:text="@string/bt_ativar"
+            android:textColor="#04210F"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvListInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Lista de bloqueio: 0 domínios"
+            android:textColor="#9AA6C0"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#394867"
+            android:text="@string/bt_update"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#8A1FBF"
+            android:text="@string/bt_player"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btYoutube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#CC0000"
+            android:text="@string/bt_youtube"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/como_usar"
+            android:textColor="#9AA6C0"
+            android:textSize="13sp"
+            android:lineSpacingExtra="3dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/creditos"
+            android:textColor="#5C6885"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

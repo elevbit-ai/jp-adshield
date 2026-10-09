@@ -1,0 +1,4 @@
+// JP AdShield - Criado por Joaquim Pedro de Morais Filho (j360074@hotmail.com)
+plugins {
+    id 'com.android.application' version '8.2.2' apply false
+}

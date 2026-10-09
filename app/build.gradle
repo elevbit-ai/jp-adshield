@@ -1,0 +1,46 @@
+// JP AdShield - Criado por Joaquim Pedro de Morais Filho (j360074@hotmail.com)
+plugins { id 'com.android.application' }
+
+def ksPropsFile = rootProject.file('keystore.properties')
+def ksProps = new Properties()
+def hasKs = ksPropsFile.exists()
+if (hasKs) { ksProps.load(new FileInputStream(ksPropsFile)) }
+
+android {
+    namespace 'ai.elevbit.jpadshield'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'ai.elevbit.jpadshield'
+        minSdk 24
+        targetSdk 33
+        versionCode 2
+        versionName '1.1.0'
+        resValue "string", "author", "Joaquim Pedro de Morais Filho - j360074@hotmail.com"
+    }
+
+    signingConfigs {
+        release {
+            if (hasKs) {
+                storeFile rootProject.file(ksProps['storeFile'])
+                storePassword ksProps['storePassword']
+                keyAlias ksProps['keyAlias']
+                keyPassword ksProps['keyPassword']
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig hasKs ? signingConfigs.release : signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // Sem dependencias externas: apenas o framework Android (leve).
+}

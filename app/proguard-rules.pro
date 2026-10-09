@@ -1,0 +1,1 @@
+# JP AdShield - sem ofuscacao.

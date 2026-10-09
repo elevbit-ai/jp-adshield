@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- JP AdShield - reprodutor em 2o plano -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#0B1020"
+        android:padding="6dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/edUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#16203A"
+            android:hint="URL ou busca no YouTube"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#67738F"
+            android:inputType="textUri"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btGo"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="40dp"
+            android:text="Ir" />
+
+        <Button
+            android:id="@+id/btPip"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="40dp"
+            android:text="⧉" />
+
+        <Button
+            android:id="@+id/btDesktop"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="40dp"
+            android:text="PC" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
